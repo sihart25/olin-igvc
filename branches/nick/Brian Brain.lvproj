@@ -12,11 +12,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="test_harness_distance_between_points_squared.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/test_harness_distance_between_points_squared.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
-				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
-				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
-			</Item>
 			<Item Name="distance_between_points_squared.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/distance_between_points_squared.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

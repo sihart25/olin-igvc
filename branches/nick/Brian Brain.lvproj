@@ -13,6 +13,7 @@
 		<Item Name="test_harness_distance_between_points_squared.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/test_harness_distance_between_points_squared.vi"/>
 		<Item Name="cosinesinegenerator.vi" Type="VI" URL="../FPGA/IO/LIDAR/cosinesinegenerator.vi"/>
 		<Item Name="test_411.vi" Type="VI" URL="../../../test_411.vi"/>
+		<Item Name="cosinex_0to360.vi" Type="VI" URL="../FPGA/IO/LIDAR/cosinex_0to360.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="subBuildXYGraph.vi" Type="VI" URL="/&lt;vilib&gt;/express/express controls/BuildXYGraphBlock.llb/subBuildXYGraph.vi"/>
@@ -23,9 +24,7 @@
 			<Item Name="distance_between_points_squared.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/distance_between_points_squared.vi"/>
 			<Item Name="robot_position.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/robot_position.vi"/>
 			<Item Name="test variable.vi" Type="VI" URL="../FPGA/behaviors/driveable paths/test variable.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 			<Item Name="cosinex_90to90.vi" Type="VI" URL="../FPGA/IO/LIDAR/cosinex_90to90.vi"/>
-			<Item Name="cosinex_0to360.vi" Type="VI" URL="../FPGA/IO/LIDAR/cosinex_0to360.vi"/>
 			<Item Name="sinex_0to360.vi" Type="VI" URL="../FPGA/IO/LIDAR/sinex_0to360.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using the RS-232 FPGA IP</title>
+<style type="text/css">
+<!--
+body {
+	font-family: Verdana, "Trebuchet MS", Helvetica, "Lucida Sans Unicode", "Lucida Grande", Tahoma, sans-serif;
+}
+.Heading {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.SectionHeader {
+	font-size: 18px;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<p class="Heading">Using LabVIEW FPGA with Digital I/O Lines<br />
+For RS-232 Serial Communications</p>
+<p>&nbsp;</p>
+<p>These example VIs implement a simple RS-232 interface using the <a id="enlink0" href="http://www.ni.com/fpga">LabVIEW FPGA</a> Module.</p>
+<p class="SectionHeader">Requirements:</p>
+<ul>
+  <li>LabVIEW FPGA 8.6 or later</li>
+  <li>LabVIEW FPGA Target with Digital I/O Lines (such as Single-Board RIO, PXI-7831R, or CompactRIO with a Digital I/O C-series Module)</li>
+  <li>RS-232 transceiver, used to convert TTL voltage levels to RS-232 levels. (Optional if remote device can use TTL voltage levels directly.)</li>
+</ul>
+<p class="SectionHeader">Features</p>
+<ul>
+  <li>Configurable baud rate, number of data bits (5 to 8), parity, stop bits, no hardware flow control</li>
+  <li>Works with normal and inverting transceivers</li>
+  <li>Includes FPGA VIs for reading/writing one byte at a time through digital lines</li>
+  <li>Includes LabVIEW Host (Windows or Real-Time) VIs for reading/writing strings</li>
+  <li>Reusable for multiple serial ports on the same device (with minor edits)</li>
+</ul>
+<p class="SectionHeader">System Used for Testing</p>
+<ul>
+  <li>NI-9602 <a href="http://www.ni.com/singleboard/" target="_blank">Single-Board RIO</a></li>
+  <li>LabVIEW FPGA 8.6.1</li>
+  <li>LabVIEW Real-Time 8.6.1</li>
+  <li>LabVIEW for Windows 8.6.1</li>
+  <li>Sipex SP213EHCA-L RS-232 Transceiver</li>
+</ul>
+<p class="SectionHeader">Instructions</p>
+<p>You will need to incorporate the included VIs into the LabVIEW Project for your application. You will also need to create two target-scoped FIFOs.</p>
+<p><img src="help/proj.png" alt="Project Window" width="384" height="547" align="top" /></p>
+<p>The Host VIs shown below are the main API for using the serial port from the host controller. (On a cRIO or sbRIO target, this is the LabVIEW Real-Time controller.) The Example VI for the host shows how to use these VIs to send a command to an instrument and receive a response.</p>
+<p><img src="help/example.png" width="402" height="416" alt="Example Block Diagram" /></p>
+<p>&nbsp;</p>
+<p>Since LabVIEW FPGA can have only one top-level VI, you must incorporate the contents of the &quot;FPGA Main.vi&quot; into your top-level FPGA VI. The &quot;FPGA Main.vi&quot; block diagram consists of one subVI call, and two parallel loops for interacting with the FIFOs. You must change the constants for the Transmit and Receive ports to match your system. If you are using an inverting transceiver (where the TTL and RS-232 signals are inverted from each other), pass a TRUE value for the &quot;Invert Polarity?&quot; input.</p>
+<p><img src="help/fpga-main-bd.png" width="699" height="934" alt="Block Diagram of Top-Level FPGA VI" /></p>
+<p>The FIFOs are also configured in the project. They are Target-Scoped FIFOs of type U8.</p>
+<p><img src="help/fifo.png" width="735" height="232" alt="FIFO Configuration Dialog" /></p>
+<p class="SectionHeader">Advanced Topics...</p>
+<ul>
+  <li>If you want to use multiple DIO lines to communicate with multiple serial ports, you must duplicate the contents of the top-level FPGA VI and the LV FPGA Serial Read Write.vi. You must select different DIO constants for each serial port you want to create. You also must create a new pair of FIFOs, and modify both the top-level FPGA VI, and the copies of the LV FPGA Serial Read Write.vi to use these FIFOs.</li>
+  <li>On the host side, the LVRT Serial Write.vi uses a loop as it waits for each byte to be consumed by the FPGA. This loop will run as fast as it possibly can, and consequently use up CPU time while this occurs. For some applications, you may prefer to put a Wait function inside this loop, so that it will use less CPU time (at the expense of slower serial writes). Similarly, the LVRT Serial Read.vi includes a 1 millisecond wait as it read serial data. For some applications, you may prefer to remove this Wait, so that the serial data can be read faster.</li>
+  <li>These VIs assume that the FPGA clock rate is 40 MHz. If you are using a different FPGA clock rate, you can modify the LV FPGA Serial Read Write.vi, and wire a different value to the LV FPGA Serial Calc Timing Values.vi.</li>
+</ul>
+<p>Copyright &copy; 2009 National Instruments Corp.</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -3111,9 +3111,17 @@
 				<Property Name="crio.Type" Type="Str">NI 9263</Property>
 				<Property Name="FPGA.PersistentID" Type="Str">{BD5BA358-2D38-408A-AE88-CAB33DC77FAB}</Property>
 			</Item>
-			<Item Name="Dependencies" Type="Dependencies"/>
+			<Item Name="Dependencies" Type="Dependencies">
+				<Item Name="nifxpmath_DesktopException.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/SharedSubVIs/common/nifxpmath_DesktopException.vi"/>
+				<Item Name="nifxpmath_DesktopExceptionRpt.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/SharedSubVIs/common/nifxpmath_DesktopExceptionRpt.vi"/>
+				<Item Name="nifxpmath_Atan2_SimConfig.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/FxpAtan2/subVIs/nifxpmath_Atan2_SimConfig.ctl"/>
+				<Item Name="DllFxpAtan2Temp_sub.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/FxpAtan2/simVIs/DllFxpAtan2Temp_sub.vi"/>
+			</Item>
 			<Item Name="Build Specifications" Type="Build"/>
 		</Item>
+		<Item Name="roll.vi" Type="VI" URL="../FPGA/roll.vi"/>
+		<Item Name="pitch.vi" Type="VI" URL="../FPGA/pitch.vi"/>
+		<Item Name="yaw.vi" Type="VI" URL="../FPGA/yaw.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

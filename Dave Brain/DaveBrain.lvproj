@@ -181,6 +181,10 @@
 			<Item Name="1.3.10-Arc Length.vi" Type="VI" URL="../../../Junk/1.3.10-Arc Length.vi"/>
 			<Item Name="1.3.11-Position.vi" Type="VI" URL="../../../Junk/1.3.11-Position.vi"/>
 			<Item Name="1.3.12-DistSquared.vi" Type="VI" URL="../../../Junk/1.3.12-DistSquared.vi"/>
+			<Item Name="1.4.1-Encoder Math.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math.vi"/>
+			<Item Name="1.4.2-Encoder Integration.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.2-Encoder Integration.vi"/>
+			<Item Name="1.4.3-Drive Encoder.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.3-Drive Encoder.vi"/>
+			<Item Name="1.4.5-Steering Encoder.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.5-Steering Encoder.vi"/>
 			<Item Name="1.6.1-CosDegIn_I-II.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.1-CosDegIn_I-II.vi"/>
 			<Item Name="1.6.2-SinDegIn_I-II.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.2-SinDegIn_I-II.vi"/>
 			<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
@@ -210,10 +214,7 @@
 			<Item Name="Drive Control Global DO NOT MODIFY!.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Drive Control Global DO NOT MODIFY!.vi"/>
 			<Item Name="Drive Encoder Counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Drive Encoder Counter.vi"/>
 			<Item Name="Drive Encoder Input.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Input VIs/Drive Encoder Input.vi"/>
-			<Item Name="Drive Encoder Reader.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Encoder Readers/Drive Encoder Reader.vi"/>
 			<Item Name="Drive Motor Controler.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Drive Motor Controler.vi"/>
-			<Item Name="Encoder Math 2 no timing.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Encoder Math 2 no timing.vi"/>
-			<Item Name="Encoder Math.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Encoder Math.vi"/>
 			<Item Name="FPGA Opperation Mode.ctl" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/FPGA Opperation Mode.ctl"/>
 			<Item Name="GPS Wait for Valid Data.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/GPS Wait for Valid Data.vi"/>
 			<Item Name="graph drivable paths.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/behaviors/driveable path/graph drivable paths.vi"/>
@@ -242,7 +243,6 @@
 			<Item Name="Output Motor Enable Bits.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Output Motor Enable Bits.vi"/>
 			<Item Name="Steering Encoder Counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Encoder Counter.vi"/>
 			<Item Name="Steering Encoder Input.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Input VIs/Steering Encoder Input.vi"/>
-			<Item Name="Steering Encoder Reader.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Encoder Readers/Steering Encoder Reader.vi"/>
 			<Item Name="Steering Motor Controler.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Motor Controler.vi"/>
 			<Item Name="Subvi for fastbox.vi" Type="VI" URL="../5-Forebrain/UDP X-Box/FPGA/Motor Control/Inner Control/Subvi for fastbox.vi"/>
 			<Item Name="Turn Motors Off.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Turn Motors Off.vi"/>
@@ -1431,7 +1431,6 @@
 						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 					</Item>
 					<Item Name="1.3.5-Confirm.vi" Type="VI" URL="../../../Junk/1.3.5-Confirm.vi"/>
-					<Item Name="decode point message.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/IO/vision serial/decode point message.vi"/>
 					<Item Name="vision communication serial port.vi" Type="VI" URL="../1-Hindbrain/FPGA_serial_port/vision communication serial port.vi"/>
 					<Item Name="LV FPGA Serial Calc Timing Values.vi" Type="VI" URL="../../trunk/FPGA_serial_port/LV FPGA Serial Calc Timing Values.vi"/>
 					<Item Name="1.3.9-Turning Radius.vi" Type="VI" URL="../../../Junk/1.3.9-Turning Radius.vi"/>
@@ -1445,63 +1444,22 @@
 					<Item Name="1.3.2-Serial Write.vi" Type="VI" URL="../../../Junk/1.3.2-Serial Write.vi"/>
 					<Item Name="1.3.1-Serial Read.vi" Type="VI" URL="../../../Junk/1.3.1-Serial Read.vi"/>
 					<Item Name="1.3.4-Paths.vi" Type="VI" URL="../../../Junk/1.3.4-Paths.vi"/>
-					<Item Name="nirviFifoEmulationCheckTarget.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirviFifoEmulationCheckTarget.vi"/>
-					<Item Name="nirvififoEmulationSetSize.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirvififoEmulationSetSize.vi"/>
-					<Item Name="niFpgaGetScratchAppInstance.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/niFpgaGetScratchAppInstance.vi"/>
-					<Item Name="nirviEmuReportErrorAndStop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuReportErrorAndStop.vi"/>
-					<Item Name="niFpgaFifoControlLogicControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/niFpgaFifoControlLogicControl.ctl"/>
-					<Item Name="niFpgaMemoryInterfaceConfiguration.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Types/niFpgaMemoryInterfaceConfiguration.ctl"/>
-					<Item Name="niFpgaContainerInitializationParameters.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerInitializationParameters.ctl"/>
-					<Item Name="niFpgaTransferTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaTransferTypeControl.ctl"/>
-					<Item Name="niFpgaContainerArbitrationOptionsControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerArbitrationOptionsControl.ctl"/>
-					<Item Name="niFpgaContainerImplementationControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerImplementationControl.ctl"/>
-					<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
-					<Item Name="niFpgaContainerState.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerState.ctl"/>
-					<Item Name="niFpgaContainerMetaDataKey.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerMetaDataKey.ctl"/>
-					<Item Name="niFpgaContainerSetEmuInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerSetEmuInfo.vi"/>
-					<Item Name="niFpgaContainerEmuAddTargetNameIfNeeded.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerEmuAddTargetNameIfNeeded.vi"/>
-					<Item Name="niFpgaContainerGetUniqueNameForEmu.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerGetUniqueNameForEmu.vi"/>
-					<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
-					<Item Name="nirvimemoryEmulationManagerCache_Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Emulation/nirvimemoryEmulationManagerCache_Operations.ctl"/>
-					<Item Name="nirvimemoryEmulationManagerCache.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Emulation/nirvimemoryEmulationManagerCache.vi"/>
-					<Item Name="nirvimemoryEmulationManagerCache_InsertValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Emulation/nirvimemoryEmulationManagerCache_InsertValue.vi"/>
-					<Item Name="nirvimemoryEmulationManagerCache_GetValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Emulation/nirvimemoryEmulationManagerCache_GetValue.vi"/>
-					<Item Name="niFpgaContainerGetEmuInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerGetEmuInfo.vi"/>
-					<Item Name="niFpgaContainerExecOnDevCompGetState.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerExecOnDevCompGetState.vi"/>
-					<Item Name="nirviCommon.vi" Type="VI" URL="/&lt;vilib&gt;/express/rvi/timingcommon/nirviCommon.vi"/>
-					<Item Name="niFpgaRandomDataHandleErrors.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/niFpgaRandomDataHandleErrors.vi"/>
-					<Item Name="nirviQueueStoreOperation.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviQueueStoreOperation.ctl"/>
-					<Item Name="nirviRandomDataQueueStore.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataQueueStore.vi"/>
-					<Item Name="nirviFPGAContextMergeError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviFPGAContextMergeError.vi"/>
-					<Item Name="nirviRandomDataReleaseLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataReleaseLock.vi"/>
-					<Item Name="nirviRandomDataCheckExitLoopConditions.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataCheckExitLoopConditions.vi"/>
-					<Item Name="nirviRandomDataAcquireLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataAcquireLock.vi"/>
-					<Item Name="niFpgaContainerMethod.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerMethod.ctl"/>
-					<Item Name="nirviRandomDataFPGAFIFO.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataFPGAFIFO.vi"/>
-					<Item Name="niFpgaPeerToPeerStreamState.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/FIFO/niFpgaPeerToPeerStreamState.ctl"/>
-					<Item Name="nirvimemoryEmulationManagerCache_SetValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Emulation/nirvimemoryEmulationManagerCache_SetValue.vi"/>
-					<Item Name="nifxpmath_DesktopException.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/SharedSubVIs/common/nifxpmath_DesktopException.vi"/>
-					<Item Name="nifxpmath_DesktopExceptionRpt.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/SharedSubVIs/common/nifxpmath_DesktopExceptionRpt.vi"/>
-					<Item Name="nifxpmath_Mul_SimConfig.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/FxpMul/subVIs/nifxpmath_Mul_SimConfig.ctl"/>
-					<Item Name="DllFxpMulTemp_sub.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FXPMathLib/FxpMul/simVIs/DllFxpMulTemp_sub.vi"/>
-					<Item Name="EIO_ResourceConfig.ctl" Type="VI" URL="/&lt;vilib&gt;/eio/EIO_ResourceConfig.ctl"/>
-					<Item Name="niFpgaExecutionStage.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/niFpgaExecutionStage.ctl"/>
-					<Item Name="nirviEmuClasses.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuClasses.ctl"/>
-					<Item Name="niLvFpgaEmuInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/sdk/emulation/public/niLvFpgaEmuInfo.ctl"/>
-					<Item Name="nirviEmuTemplateMethod_errors.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuTemplateMethod_errors.vi"/>
-					<Item Name="nirviEmuTemplateMethod_noerrors.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuTemplateMethod_noerrors.vi"/>
+					<Item Name="decode point message.vi" Type="VI" URL="../5-Forebrain/FPGA/IO/vision serial/decode point message.vi"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build"/>
 			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="FishArchitecture_FPGATarget_MainFPGAV2_487E23F7.lvbitx" Type="Document" URL="../FPGA Bitfiles/FishArchitecture_FPGATarget_MainFPGAV2_487E23F7.lvbitx"/>
 			<Item Name="FPGA Interface.ctl" Type="VI" URL="../3-Midbrain/FPGA Interface.ctl"/>
@@ -1513,17 +1471,16 @@
 			<Item Name="FPGA Tritech Self Test FSM State.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Self Test FSM/FPGA Tritech Self Test FSM State.ctl"/>
 			<Item Name="FPGA Tritech Superficial Parser FSM Mem.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Superficial Parser FSM/FPGA Tritech Superficial Parser FSM Mem.ctl"/>
 			<Item Name="FPGA Tritech Superficial Parser FSM State.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Superficial Parser FSM/FPGA Tritech Superficial Parser FSM State.ctl"/>
-			<Item Name="GlobalACT.vi" Type="VI" URL="../2 Low Neurons/GlobalACT.vi"/>
-			<Item Name="GlobalHowAmI.vi" Type="VI" URL="../2 Low Neurons/GlobalHowAmI.vi"/>
-			<Item Name="GlobalWhatAroundMe.vi" Type="VI" URL="../2 Low Neurons/GlobalWhatAroundMe.vi"/>
-			<Item Name="GlobalWhereAmI.vi" Type="VI" URL="../2 Low Neurons/GlobalWhereAmI.vi"/>
-			<Item Name="HowHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3 Midbrain/HowHindbraintoMidbrainFilterCalibrate.vi"/>
 			<Item Name="Init Queues and Notifiers.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/Init Queues and Notifiers.vi"/>
-			<Item Name="LaneFollow.vi" Type="VI" URL="../3 Midbrain/LaneFollow.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="MidbrainArbiter.vi" Type="VI" URL="../3 Midbrain/MidbrainArbiter.vi"/>
-			<Item Name="MidbrainBehaviorEngine.vi" Type="VI" URL="../3 Midbrain/MidbrainBehaviorEngine.vi"/>
-			<Item Name="Obstacle Avoid.vi" Type="VI" URL="../3 Midbrain/Obstacle Avoid.vi"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpga_Close_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Close_cRIO-9104.vi"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/nirio_resource_hc.ctl"/>
+			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
 			<Item Name="RT Create FPGAQueue.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/RT Create FPGAQueue.vi"/>
 			<Item Name="RT Finset GUI.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset GUI.vi"/>
 			<Item Name="RT Finset Main.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset Main.vi"/>
@@ -1543,9 +1500,7 @@
 			<Item Name="SeaNet Sweep Code.ctl" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Tritech Sonar Module/SeaNet Protocol Utilities/SeaNet Sweep Code.ctl"/>
 			<Item Name="Terminate Queues and Notifiers.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/Terminate Queues and Notifiers.vi"/>
 			<Item Name="Tritech mtEnum.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Tritech Utilities/Tritech mtEnum.ctl"/>
-			<Item Name="WallFollow.vi" Type="VI" URL="../3 Midbrain/WallFollow.vi"/>
-			<Item Name="WhatHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3 Midbrain/WhatHindbraintoMidbrainFilterCalibrate.vi"/>
-			<Item Name="WhereHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3 Midbrain/WhereHindbraintoMidbrainFilterCalibrate.vi"/>
+			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

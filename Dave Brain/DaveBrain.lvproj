@@ -1,39 +1,29 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
-	<Property Name="varPersistentID:{0226FD06-44B3-4F09-A45A-E08D2E8BAD7A}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/LIDAR Data (r:pixel b:degrees)</Property>
 	<Property Name="varPersistentID:{17900296-C4D7-4F0E-9E5E-2541E4524855}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/E-Stop</Property>
 	<Property Name="varPersistentID:{1BBA0349-E06A-4A9A-A4B4-CBCEE0CA51F9}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/UDP Subvis/Devcomplibrary.lvlib/upd typedef hosted on devcomp</Property>
-	<Property Name="varPersistentID:{1C3C495C-F5DB-4BCD-936D-213760DD72EB}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/WhereAmI? Clean</Property>
 	<Property Name="varPersistentID:{1FEE3982-7FBC-4319-BFDA-C22BB8586318}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Back Button</Property>
 	<Property Name="varPersistentID:{2A137FEA-6629-41D2-A86E-7F6416F0EE50}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/UDP Subvis/Devcomplibrary.lvlib/Millisecond Delay</Property>
-	<Property Name="varPersistentID:{2E38BD63-E292-4E52-984E-6F4928805A7D}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/HowAmI? Clean</Property>
-	<Property Name="varPersistentID:{3DAD45E1-DA7E-4680-942C-7FE616FAF932}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/initialized LIDAR_array</Property>
 	<Property Name="varPersistentID:{41F9285E-7508-4460-8D80-16D629A9BE3D}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/B Button</Property>
 	<Property Name="varPersistentID:{4354C64D-5000-46DC-815C-5243BCA150AB}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/A Button</Property>
 	<Property Name="varPersistentID:{4F5C574B-41C0-40E9-8B9F-C754A782C9BB}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Left Joy Y-Axis</Property>
 	<Property Name="varPersistentID:{5F949A03-64C0-43F2-AFA2-5DC98155DEE5}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Right Joy Y-Axis</Property>
 	<Property Name="varPersistentID:{68BCB77B-C7A2-4847-BAF9-186BD422FD72}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Right Joy Click</Property>
 	<Property Name="varPersistentID:{7F99F488-0476-42BF-9C87-A2A07CA352E3}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Direction Pad</Property>
-	<Property Name="varPersistentID:{80B7642B-6E2E-4B98-8548-0293524B9BBC}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/MissionTime</Property>
 	<Property Name="varPersistentID:{82612305-4540-48D6-A90D-84A40875C0AD}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/Power On</Property>
 	<Property Name="varPersistentID:{87BC5369-535A-44A4-9586-DF4CB1584E44}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Right Joy X-Axis</Property>
 	<Property Name="varPersistentID:{89511ECC-1BC9-44ED-A744-22570DC749DC}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Left Bumper</Property>
 	<Property Name="varPersistentID:{8DDE896A-03FA-4AA9-9667-F47FD65D19B2}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Left Trigger</Property>
 	<Property Name="varPersistentID:{945BE36F-EB45-4D8A-BA52-DF5BA3168329}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/Steering Setpoint</Property>
-	<Property Name="varPersistentID:{9B6D26F8-BEDC-4939-A177-76BD8732BFB1}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/WhatAroundMe? Clean</Property>
 	<Property Name="varPersistentID:{A53B4714-E8AC-4CE9-8D02-A270C6D7AD9B}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/Throttle</Property>
 	<Property Name="varPersistentID:{ADA59291-537F-4178-9031-41DBF96DEFC5}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/X Button</Property>
 	<Property Name="varPersistentID:{B68318AA-6F53-4E5F-975A-6EA631A5F211}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Left Joy X-Axis</Property>
-	<Property Name="varPersistentID:{B740461D-9E1B-41E8-A254-F562BF1ECC88}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/ActCommand</Property>
-	<Property Name="varPersistentID:{B7AC1DBB-BAE6-4A6A-9E53-25E1116E03CA}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/MDF Image</Property>
-	<Property Name="varPersistentID:{BC7E1B64-4889-4B81-8097-51AE84798362}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/ForebrainCom</Property>
 	<Property Name="varPersistentID:{C19F9DD0-CD47-467F-9A40-C35E8D53BC6A}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/type string for udp</Property>
 	<Property Name="varPersistentID:{C99986EB-A3CD-48AF-9668-CB4D31C099E1}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Y Button</Property>
 	<Property Name="varPersistentID:{D326B653-E61B-44BE-ABDC-164A50F5EFBC}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Right Bumper</Property>
 	<Property Name="varPersistentID:{E159018E-BE18-408E-983E-7AD1D9B7F2D6}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Right Trigger</Property>
 	<Property Name="varPersistentID:{F152B4AF-0362-43FB-982C-9E4EF533F358}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Left Joy Click</Property>
 	<Property Name="varPersistentID:{F25E4289-BCB6-4911-AA75-76504813AE3B}" Type="Ref">/My Computer/5-Forebrain/UDP X-Box/Shared Variables for Joystick.lvlib/X-Box/Start Button</Property>
-	<Property Name="varPersistentID:{FFE4CD33-84DF-409D-85CD-3A07F3A2EEBC}" Type="Ref">/My Computer/7-OCU/RobotBrainExLibrary.lvlib/stop</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -175,17 +165,6 @@
 			<Item Name="2.2-Where Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.2-Where Sensor Typedef.ctl"/>
 			<Item Name="2.3-What Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.3-What Sensor Typedef.ctl"/>
 			<Item Name="2.4-How Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.4-How Sensor Typedef.ctl"/>
-			<Item Name="3.0-Global.vi" Type="VI" URL="../3-Midbrain/3.0-Global.vi"/>
-			<Item Name="3.1-Where.vi" Type="VI" URL="../3-Midbrain/3.1-Where.vi"/>
-			<Item Name="3.2-What.vi" Type="VI" URL="../3-Midbrain/3.2-What.vi"/>
-			<Item Name="3.4-Limbic.vi" Type="VI" URL="../3-Midbrain/3.4-Limbic.vi"/>
-			<Item Name="3.5-Cerebellum.vi" Type="VI" URL="../3-Midbrain/3.5-Cerebellum.vi"/>
-			<Item Name="3.6-Act Arbitrator.vi" Type="VI" URL="../3-Midbrain/3.6-Act Arbitrator.vi"/>
-			<Item Name="3.6.1-Arbiter.vi" Type="VI" URL="../3-Midbrain/3.6.1-Arbiter.vi"/>
-			<Item Name="3.90.1-Grab Shutdown Queue.vi" Type="VI" URL="../3-Midbrain/3.90.1-Grab Shutdown Queue.vi"/>
-			<Item Name="3.90.2-Borrow FPGA Ref.vi" Type="VI" URL="../3-Midbrain/3.90.2-Borrow FPGA Ref.vi"/>
-			<Item Name="3.90.3-Return FPGA Ref.vi" Type="VI" URL="../3-Midbrain/3.90.3-Return FPGA Ref.vi"/>
-			<Item Name="4.3-How.vi" Type="VI" URL="../3-Midbrain/4.3-How.vi"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_Combined Steering ~2D.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_Combined Steering ~2D.lvbitx"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_FPGA Main.vi.lvbitx" Type="Document" URL="../5-Forebrain/Unsorted Athena Files/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_FPGA Main.vi.lvbitx"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_Gray&apos;s Mod Motor C~4B.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_Gray&apos;s Mod Motor C~4B.lvbitx"/>
@@ -194,7 +173,6 @@
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_SuperSimpleEncoder~0F.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_SuperSimpleEncoder~0F.lvbitx"/>
 			<Item Name="athena FPGA globals.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/athena FPGA globals.vi"/>
 			<Item Name="avoid lines.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/avoid lines.vi"/>
-			<Item Name="AvoidWall.vi" Type="VI" URL="../3-Midbrain/AvoidWall.vi"/>
 			<Item Name="calculate_drivable_paths_line (test).vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/calculate_drivable_paths_line (test).vi"/>
 			<Item Name="Data Latch.ctl" Type="VI" URL="../2-Low Neurons/Data Latch.ctl"/>
 			<Item Name="decode point message.vi" Type="VI" URL="../5-Forebrain/FPGA/IO/vision serial/decode point message.vi"/>
@@ -205,18 +183,12 @@
 			<Item Name="Drive Encoder Input.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Input VIs/Drive Encoder Input.vi"/>
 			<Item Name="Drive Motor Controler.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Drive Motor Controler.vi"/>
 			<Item Name="FPGA Opperation Mode.ctl" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/FPGA Opperation Mode.ctl"/>
-			<Item Name="GlobalHowAmI.vi" Type="VI" URL="../2-Low Neurons/GlobalHowAmI.vi"/>
-			<Item Name="GlobalWhatAroundMe.vi" Type="VI" URL="../2-Low Neurons/GlobalWhatAroundMe.vi"/>
-			<Item Name="GlobalWhereAmI.vi" Type="VI" URL="../2-Low Neurons/GlobalWhereAmI.vi"/>
 			<Item Name="GPS Wait for Valid Data.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/GPS Wait for Valid Data.vi"/>
 			<Item Name="graph drivable paths.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/behaviors/driveable path/graph drivable paths.vi"/>
-			<Item Name="HowHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3-Midbrain/HowHindbraintoMidbrainFilterCalibrate.vi"/>
 			<Item Name="Implement Motor Voltage Outputs.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Implement Motor Voltage Outputs.vi"/>
-			<Item Name="LaneFollow.vi" Type="VI" URL="../3-Midbrain/LaneFollow.vi"/>
 			<Item Name="line driveable paths global.vi" Type="VI" URL="../Deleteme/line driveable paths global.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
-			<Item Name="MidbrainBehaviorEngine.vi" Type="VI" URL="../3-Midbrain/MidbrainBehaviorEngine.vi"/>
 			<Item Name="Motor Encoder Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motor Encoder Global.vi"/>
 			<Item Name="Motor Output Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motor Output Global.vi"/>
 			<Item Name="Motors Main.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motors Main.vi"/>
@@ -227,10 +199,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="no timeout error.vi" Type="VI" URL="../../../../../Engineering/National Instruments/LabVIEW 2009/examples/comm/UDP.llb/no timeout error.vi"/>
-			<Item Name="Obstacle Avoid.vi" Type="VI" URL="../3-Midbrain/Obstacle Avoid.vi"/>
 			<Item Name="obstacle avoidance.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/obstacle avoidance.vi"/>
 			<Item Name="Output Motor Enable Bits.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Output Motor Enable Bits.vi"/>
-			<Item Name="SteerComand.vi" Type="VI" URL="../3-Midbrain/SteerComand.vi"/>
 			<Item Name="Steering Encoder Counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Encoder Counter.vi"/>
 			<Item Name="Steering Encoder Input.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Input VIs/Steering Encoder Input.vi"/>
 			<Item Name="Steering Motor Controler.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Motor Controler.vi"/>
@@ -239,9 +209,6 @@
 			<Item Name="UDP3GLOB.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/UDP3-GPS, INS/UDP3GLOB.vi"/>
 			<Item Name="vision communication serial port.vi" Type="VI" URL="../1-Hindbrain/FPGA_serial_port/vision communication serial port.vi"/>
 			<Item Name="vision decoder state typedef.ctl" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/IO/vision serial/vision decoder state typedef.ctl"/>
-			<Item Name="WallFollow.vi" Type="VI" URL="../3-Midbrain/WallFollow.vi"/>
-			<Item Name="WhatHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3-Midbrain/WhatHindbraintoMidbrainFilterCalibrate.vi"/>
-			<Item Name="WhereHindbraintoMidbrainFilterCalibrate.vi" Type="VI" URL="../3-Midbrain/WhereHindbraintoMidbrainFilterCalibrate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1430,15 +1397,12 @@
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="FishArchitecture_FPGATarget_MainFPGAV2_487E23F7.lvbitx" Type="Document" URL="../FPGA Bitfiles/FishArchitecture_FPGATarget_MainFPGAV2_487E23F7.lvbitx"/>
 			<Item Name="FPGA Interface.ctl" Type="VI" URL="../3-Midbrain/FPGA Interface.ctl"/>
@@ -1452,14 +1416,6 @@
 			<Item Name="FPGA Tritech Superficial Parser FSM State.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Superficial Parser FSM/FPGA Tritech Superficial Parser FSM State.ctl"/>
 			<Item Name="Init Queues and Notifiers.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/Init Queues and Notifiers.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpga_Close_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Close_cRIO-9104.vi"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
 			<Item Name="RT Create FPGAQueue.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/RT Create FPGAQueue.vi"/>
 			<Item Name="RT Finset GUI.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset GUI.vi"/>
 			<Item Name="RT Finset Main.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset Main.vi"/>
@@ -1479,7 +1435,6 @@
 			<Item Name="SeaNet Sweep Code.ctl" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Tritech Sonar Module/SeaNet Protocol Utilities/SeaNet Sweep Code.ctl"/>
 			<Item Name="Terminate Queues and Notifiers.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/Terminate Queues and Notifiers.vi"/>
 			<Item Name="Tritech mtEnum.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Tritech Utilities/Tritech mtEnum.ctl"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

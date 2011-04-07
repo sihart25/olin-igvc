@@ -51,7 +51,10 @@
 		<Item Name="FPGA Main.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="u-blox 5 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/u-blox 5 Series/u-blox 5 Series.lvlib"/>
+				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/u-blox 5 Series/Public/Close.vi"/>
+				<Item Name="Get Position Data.vi" Type="VI" URL="/&lt;instrlib&gt;/u-blox 5 Series/Public/Data/Advanced/Get Position Data.vi"/>
+				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/u-blox 5 Series/Public/Initialize.vi"/>
+				<Item Name="Read Raw Data.vi" Type="VI" URL="/&lt;instrlib&gt;/u-blox 5 Series/Public/Data/Advanced/Read Raw Data.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
@@ -67,6 +70,7 @@
 				<Item Name="closeJoystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeJoystick.vi"/>
 				<Item Name="closeKeyboard.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeKeyboard.vi"/>
 				<Item Name="closeMouse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeMouse.vi"/>
+				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -83,6 +87,7 @@
 				<Item Name="Draw Text in Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text in Rect.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Error to Warning.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error to Warning.vi"/>
 				<Item Name="errorList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/errorList.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
@@ -97,10 +102,11 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Hilite Color.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Hilite Color.vi"/>
+				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
+				<Item Name="Image Unit" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Unit"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
-				<Item Name="IMAQ GetColorPixelLine" Type="VI" URL="/&lt;vilib&gt;/vision/Color.llb/IMAQ GetColorPixelLine"/>
 				<Item Name="IMAQ GetFileInfo" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ GetFileInfo"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="IMAQ Load Image Dialog" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Load Image Dialog"/>
@@ -111,7 +117,6 @@
 				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="Map Setup.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Map Setup.vi"/>
 				<Item Name="Map Value to Pixel.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Map Value to Pixel.vi"/>
@@ -125,6 +130,7 @@
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="ni_tagger_lv_FlushAllConnections.vi" Type="VI" URL="/&lt;vilib&gt;/variable/tagger/ni_tagger_lv_FlushAllConnections.vi"/>
 				<Item Name="NI_VariableUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Variable/NI_VariableUtilities.lvlib"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Num To Text.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Num To Text.vi"/>
 				<Item Name="PCT Pad String.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/PCT Pad String.vi"/>
@@ -142,6 +148,7 @@
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Simple Grid Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Simple Grid Descriptor"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -153,19 +160,35 @@
 			</Item>
 			<Item Name="0 less than x less than 3.5.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/0 less than x less than 3.5.vi"/>
 			<Item Name="1.0-Hindbrain Global.vi" Type="VI" URL="../1-Hindbrain/1.0-Hindbrain Global.vi"/>
+			<Item Name="1.3.1-Serial Read.vi" Type="VI" URL="../../../Junk/1.3.1-Serial Read.vi"/>
+			<Item Name="1.3.2-Serial Write.vi" Type="VI" URL="../../../Junk/1.3.2-Serial Write.vi"/>
 			<Item Name="1.3.3-Lidar Read Write.vi" Type="VI" URL="../../../Junk/1.3.3-Lidar Read Write.vi"/>
 			<Item Name="1.3.4-Paths.vi" Type="VI" URL="../../../Junk/1.3.4-Paths.vi"/>
+			<Item Name="1.3.5-Confirm.vi" Type="VI" URL="../../../Junk/1.3.5-Confirm.vi"/>
+			<Item Name="1.3.6-Transform.vi" Type="VI" URL="../../../Junk/1.3.6-Transform.vi"/>
 			<Item Name="1.3.7-UpdateDP.vi" Type="VI" URL="../../../Junk/1.3.7-UpdateDP.vi"/>
+			<Item Name="1.3.8-UpdateDP (point).vi" Type="VI" URL="../../../Junk/1.3.8-UpdateDP (point).vi"/>
+			<Item Name="1.3.9-Turning Radius.vi" Type="VI" URL="../../../Junk/1.3.9-Turning Radius.vi"/>
+			<Item Name="1.3.10-Arc Length.vi" Type="VI" URL="../../../Junk/1.3.10-Arc Length.vi"/>
+			<Item Name="1.3.11-Position.vi" Type="VI" URL="../../../Junk/1.3.11-Position.vi"/>
+			<Item Name="1.3.12-DistSquared.vi" Type="VI" URL="../../../Junk/1.3.12-DistSquared.vi"/>
 			<Item Name="1.4.1-Encoder Math.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math.vi"/>
 			<Item Name="1.4.2-Encoder Integration.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.2-Encoder Integration.vi"/>
 			<Item Name="1.4.3-Drive Encoder.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.3-Drive Encoder.vi"/>
 			<Item Name="1.4.5-Steering Encoder.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.5-Steering Encoder.vi"/>
+			<Item Name="1.6.1-CosDegIn_I-II.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.1-CosDegIn_I-II.vi"/>
+			<Item Name="1.6.2-SinDegIn_I-II.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.2-SinDegIn_I-II.vi"/>
+			<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
+			<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
+			<Item Name="1.6.5-mm2in.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.5-mm2in.vi"/>
+			<Item Name="1.6.6-TanDeg+-45.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.6-TanDeg+-45.vi"/>
+			<Item Name="1.6.7-CosDegIn_I-IV.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.7-CosDegIn_I-IV.vi"/>
+			<Item Name="1.6.8-SinDegIn_1-IV.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.8-SinDegIn_1-IV.vi"/>
 			<Item Name="2.0-Hindbrain Startup State.ctl" Type="VI" URL="../2-Low Neurons/2.0-Hindbrain Startup State.ctl"/>
 			<Item Name="2.1-Act Command Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.1-Act Command Typedef.ctl"/>
 			<Item Name="2.2-Where Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.2-Where Sensor Typedef.ctl"/>
 			<Item Name="2.3-What Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.3-What Sensor Typedef.ctl"/>
 			<Item Name="2.4-How Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.4-How Sensor Typedef.ctl"/>
-			<Item Name="Athena Brain.lvproj_FPGA Target 2_Combined Steering ~2D.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_Combined Steering ~2D.lvbitx"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_FPGA Main.vi.lvbitx" Type="Document" URL="../5-Forebrain/Unsorted Athena Files/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_FPGA Main.vi.lvbitx"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_Gray&apos;s Mod Motor C~4B.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_Gray&apos;s Mod Motor C~4B.lvbitx"/>
 			<Item Name="Athena Brain.lvproj_FPGA Target 2_RealEncoderTest.vi.lvbitx" Type="Document" URL="../5-Forebrain/UDP X-Box/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_RealEncoderTest.vi.lvbitx"/>
@@ -187,8 +210,9 @@
 			<Item Name="graph drivable paths.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/FPGA/behaviors/driveable path/graph drivable paths.vi"/>
 			<Item Name="Implement Motor Voltage Outputs.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Implement Motor Voltage Outputs.vi"/>
 			<Item Name="line driveable paths global.vi" Type="VI" URL="../Deleteme/line driveable paths global.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+			<Item Name="LV FPGA Serial Calc Timing Values.vi" Type="VI" URL="../../trunk/FPGA_serial_port/LV FPGA Serial Calc Timing Values.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="Motor Encoder Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motor Encoder Global.vi"/>
 			<Item Name="Motor Output Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motor Output Global.vi"/>
 			<Item Name="Motors Main.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Motors Main.vi"/>
@@ -198,13 +222,17 @@
 			<Item Name="nitaglv.dll" Type="Document" URL="nitaglv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="no timeout error.vi" Type="VI" URL="../../../../../Engineering/National Instruments/LabVIEW 2009/examples/comm/UDP.llb/no timeout error.vi"/>
+			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="obstacle avoidance.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/obstacle avoidance.vi"/>
 			<Item Name="Output Motor Enable Bits.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Output Motor Enable Bits.vi"/>
 			<Item Name="Steering Encoder Counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Encoder Counter.vi"/>
 			<Item Name="Steering Encoder Input.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Input VIs/Steering Encoder Input.vi"/>
 			<Item Name="Steering Motor Controler.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Inner Control/Steering Motor Controler.vi"/>
-			<Item Name="Subvi for fastbox.vi" Type="VI" URL="../5-Forebrain/UDP X-Box/FPGA/Motor Control/Inner Control/Subvi for fastbox.vi"/>
 			<Item Name="Turn Motors Off.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/Motor Control/Output VIs/Turn Motors Off.vi"/>
 			<Item Name="UDP3GLOB.vi" Type="VI" URL="../5-Forebrain/Unsorted Athena Files/UDP3-GPS, INS/UDP3GLOB.vi"/>
 			<Item Name="vision communication serial port.vi" Type="VI" URL="../1-Hindbrain/FPGA_serial_port/vision communication serial port.vi"/>
@@ -1338,10 +1366,11 @@
 						<Item Name="Autoscale Polar as Needed.vi" Type="VI" URL="/&lt;vilib&gt;/picture/polarplt.llb/Autoscale Polar as Needed.vi"/>
 						<Item Name="Polar Plot.vi" Type="VI" URL="/&lt;vilib&gt;/picture/polarplt.llb/Polar Plot.vi"/>
 						<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
-						<Item Name="NMEA API.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Protocols/NMEA/NMEA API.lvlib"/>
-						<Item Name="NI_Robotics Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Utilities/NI_Robotics Utilities.lvlib"/>
-						<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
-						<Item Name="IMAQ GetColorPixelLine" Type="VI" URL="/&lt;vilib&gt;/vision/Color.llb/IMAQ GetColorPixelLine"/>
+						<Item Name="Get Sentence Type.vi" Type="VI" URL="/&lt;vilib&gt;/robotics/Protocols/NMEA/Advanced/Get Sentence Type.vi"/>
+						<Item Name="Parse GPS Sentence.vi" Type="VI" URL="/&lt;vilib&gt;/robotics/Protocols/NMEA/Advanced/Instrument Specific Poly VIs/GPS/Parse GPS Sentence.vi"/>
+						<Item Name="Parse GGA Sentence.vi" Type="VI" URL="/&lt;vilib&gt;/robotics/Protocols/NMEA/Advanced/Instrument Specific Poly VIs/GPS/Parse GGA Sentence.vi"/>
+						<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+						<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 					</Item>
 					<Item Name="Motor Control Global.vi" Type="VI" URL="../1-Hindbrain/Motor Control Global.vi"/>
 					<Item Name="Strict Lidar Motor Control Cluster.ctl" Type="VI" URL="../../Strict Lidar Motor Control Cluster.ctl"/>
@@ -1391,6 +1420,19 @@
 					<Item Name="1.3.3-Lidar Read Write.vi" Type="VI" URL="../../../Junk/1.3.3-Lidar Read Write.vi"/>
 					<Item Name="1.3.4-Paths.vi" Type="VI" URL="../../../Junk/1.3.4-Paths.vi"/>
 					<Item Name="decode point message.vi" Type="VI" URL="../5-Forebrain/FPGA/IO/vision serial/decode point message.vi"/>
+					<Item Name="1.3.8-UpdateDP (point).vi" Type="VI" URL="../../../Junk/1.3.8-UpdateDP (point).vi"/>
+					<Item Name="1.3.9-Turning Radius.vi" Type="VI" URL="../../../Junk/1.3.9-Turning Radius.vi"/>
+					<Item Name="1.3.10-Arc Length.vi" Type="VI" URL="../../../Junk/1.3.10-Arc Length.vi"/>
+					<Item Name="1.3.11-Position.vi" Type="VI" URL="../../../Junk/1.3.11-Position.vi"/>
+					<Item Name="1.3.12-DistSquared.vi" Type="VI" URL="../../../Junk/1.3.12-DistSquared.vi"/>
+					<Item Name="1.3.2-Serial Write.vi" Type="VI" URL="../../../Junk/1.3.2-Serial Write.vi"/>
+					<Item Name="LV FPGA Serial Calc Timing Values.vi" Type="VI" URL="../../trunk/FPGA_serial_port/LV FPGA Serial Calc Timing Values.vi"/>
+					<Item Name="1.3.1-Serial Read.vi" Type="VI" URL="../../../Junk/1.3.1-Serial Read.vi"/>
+					<Item Name="1.3.5-Confirm.vi" Type="VI" URL="../../../Junk/1.3.5-Confirm.vi"/>
+					<Item Name="1.3.6-Transform.vi" Type="VI" URL="../../../Junk/1.3.6-Transform.vi"/>
+					<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+					</Item>
 				</Item>
 				<Item Name="Build Specifications" Type="Build"/>
 			</Item>
@@ -1415,7 +1457,7 @@
 			<Item Name="FPGA Tritech Superficial Parser FSM Mem.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Superficial Parser FSM/FPGA Tritech Superficial Parser FSM Mem.ctl"/>
 			<Item Name="FPGA Tritech Superficial Parser FSM State.ctl" Type="VI" URL="../FPGA Code/Modules/Tritech Sonar Module/Superficial Parser FSM/FPGA Tritech Superficial Parser FSM State.ctl"/>
 			<Item Name="Init Queues and Notifiers.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/Init Queues and Notifiers.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="RT Create FPGAQueue.vi" Type="VI" URL="../3-Midbrain/RT Operating Code/RT Create FPGAQueue.vi"/>
 			<Item Name="RT Finset GUI.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset GUI.vi"/>
 			<Item Name="RT Finset Main.vi" Type="VI" URL="../3-Midbrain/RT Code Modules/RT Finset Module/RT Finset Main.vi"/>

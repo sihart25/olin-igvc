@@ -14,35 +14,7 @@ from Act import *
 
 # Serial utility function
 
-def send_serial_u8(num):
-    global connection
-    if((num >= 0) and (num <= 255)):
-        connection.write(chr(num));
-    else:
-        print "send_serial: Error:",num," is not an 8 bit integer"
-        raise Exception
 
-def send_serial_s16(num):
-    global connection
-    if((num >= -32767) and (num <= 32768)):
-        if(num < 0):
-            num = 65536 - abs(num);
-
-            msb = num/256; 
-            lsb = num%256; 
-            connection.write(chr(msb));
-            connection.write(chr(lsb));
-    else:
-        print "send_serial: Error:",num," is not a 16 bit integer"
-        raise Exception
-
-def send_serial_string(commandstr):
-    if(type(commandstr)==str):
-        for cmd in commandstr.split():
-            send_serial_u8(int(cmd))
-    else:
-        print "send_serial_string: Error:",commandstr," is not a string or integer"
-        raise Exception
 
 
      

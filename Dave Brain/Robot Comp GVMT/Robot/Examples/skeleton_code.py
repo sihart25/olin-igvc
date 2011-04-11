@@ -166,7 +166,7 @@ def main():
                          # Parse data from funky format
                          
                          dict=UpdateDict(data)
-                                        
+                         print dict               
 
           except KeyboardInterrupt:
                done = True;

@@ -19,5 +19,6 @@ def UpdateDict(data):
     dictOut['Button Play']=data[15]&0x01
     dictOut['Button Advance']=data[15]&0x04
     dictOut['Battery Charge']=data[17]
+    return dictOut
     
     

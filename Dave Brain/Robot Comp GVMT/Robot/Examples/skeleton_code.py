@@ -166,14 +166,7 @@ def main():
                          # Parse data from funky format
                          
                          dict=UpdateDict(data)
-                         
-                         # Overcurrent, etc will put the robot back
-                         # into passive mode
-                         if(not_in_full_mode(sensors)):
-                              print "Entering full mode again"
-                              send_serial_string("132")
-
-                         run_scheduler(sensors)                    
+                                        
 
           except KeyboardInterrupt:
                done = True;

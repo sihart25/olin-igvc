@@ -80,7 +80,6 @@ def send_serial_string(commandstr):
 def run_scheduler(stream_result):
      # Your code here!
      # Send commands to the robot with send_serial_string, send_serial_u8, and send_serial_s16
-     #print "In scheduler..."
      if(right_bumper(stream_result)):
           print "Right bumper!"
 
@@ -91,8 +90,9 @@ def main():
 
      # Constants
      IROBOT_OI_STREAM_START_BYTE = 19;
-     DATA_LENGTH = 19 # Packets 1, 17, 35 -- Keep this manually in sync with the packets you are streaming
-     COM_PORT = 3
+     DATA_LENGTH = 19 # Packets 7,8,9,10,11,12,17,18,25
+     #-- Keep this manually in sync with the packets you are streaming
+     COM_PORT = 5 #
 
 
      # Connect to serial port
@@ -105,7 +105,7 @@ def main():
           print "Could not open serial port:",e
           return
 
-     print "Connected to serial port"
+     print "Connected to serial port. YES!!!!"
 
 
      # Initialize the Open Interface
@@ -116,7 +116,7 @@ def main():
      timeout_seconds = 10
      
      connection.flushInput()
-     send_serial_string("128 132 142 35")
+     send_serial_string("128 132 142 35")# 128- Open; 132-Full; 142-Sensors; 35-OI Mode
 
      while ((mode!=3) and ((time.time() - start_time) < timeout_seconds)):              
           if (connection.inWaiting() > 0):
@@ -141,7 +141,7 @@ def main():
 
      # Stream packet group 1 and packets 17 and 35
 
-     send_serial_string("148 3 1 17 35")
+     send_serial_string("148 9 7 8 9 10 11 12 17 18 25")#Updated 9:20 GT
      is_streaming = 0
 
      done = False
@@ -162,6 +162,7 @@ def main():
                     if(len(data) == nBytes == DATA_LENGTH):
                          # The syntax here is not the most readable:
                          # Element 11 is skipped, even though it doesn't look like it.
+                         # Parse data from funky format
                          sensors_list = data[1:11];
                          sensors_list += data[12]; # append next packet to list
                          sensors_list += data[14]; # append next packet to list

@@ -7,7 +7,7 @@ import time
 import random
 import array
 import sys
-import Sense
+from Sense import *
 
 
 # Sensors
@@ -164,9 +164,8 @@ def main():
                          # The syntax here is not the most readable:
                          # Element 11 is skipped, even though it doesn't look like it.
                          # Parse data from funky format
-                         data = [ord(dat) for dat in data]
                          
-                         dict=Sense(data)
+                         dict=UpdateDict(data)
                          
                          # Overcurrent, etc will put the robot back
                          # into passive mode

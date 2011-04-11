@@ -8,6 +8,8 @@ import random
 import array
 import sys
 from Sense import *
+from Think import *
+from Act import *
 
 
 # Sensors

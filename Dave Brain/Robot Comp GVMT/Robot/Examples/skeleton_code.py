@@ -7,6 +7,7 @@ import time
 import random
 import array
 import sys
+import Sense
 
 
 # Sensors
@@ -157,17 +158,15 @@ def main():
                          is_streaming = 1
                          print "Initialized streaming"
 
-                    nBytes = ord(connection.read());
-                    data = connection.read(nBytes);
+                    nBytes = ord(connection.read())
+                    data = connection.read(nBytes)
                     if(len(data) == nBytes == DATA_LENGTH):
                          # The syntax here is not the most readable:
                          # Element 11 is skipped, even though it doesn't look like it.
                          # Parse data from funky format
-                         sensors_list = data[1:11];
-                         sensors_list += data[12]; # append next packet to list
-                         sensors_list += data[14]; # append next packet to list
-
-                         sensors = [ord(c) for c in sensors_list];
+                         data = [ord(dat) for dat in data]
+                         
+                         dict=Sense(data)
                          
                          # Overcurrent, etc will put the robot back
                          # into passive mode
@@ -175,7 +174,7 @@ def main():
                               print "Entering full mode again"
                               send_serial_string("132")
 
-                         run_scheduler(sensors);                    
+                         run_scheduler(sensors)                    
 
           except KeyboardInterrupt:
                done = True;

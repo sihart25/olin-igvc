@@ -1,112 +1,46 @@
-# 2011 TEPRA conference competition skeleton code
+### 2011 TEPRA Conference Varun Mani and Gray Thomas Master Code ###
 
-# Add your code to run_scheduler() below
 
-import serial
-import time
-import random
-import array
 import sys
-from Sense import *
-from Think import *
-from Act import *
-
-
-# Serial utility function
-
-
-
-
-     
+import Sense
+import Think
+import Act
+ 
 def main():
-    global connection
-
-    # Constants
-    IROBOT_OI_STREAM_START_BYTE = 19
-    DATA_LENGTH = 19 # Packets 7,8,9,10,11,12,17,18,25
-    #-- Keep this manually in sync with the packets you are streaming
-    COM_PORT = 3 #
-
-
-    # Connect to serial port
-    
-    print "Connecting to serial port..."
-    try:
-        # On a Linux system, use "/dev/ttysN" instead of COM_PORT-1
-        connection=serial.Serial(COM_PORT-1, baudrate=57600, timeout=1)
-    except serial.SerialException,e:
-        print "Could not open serial port:",e
-        return
-    
-    print "Connected to serial port. YES!!!!"
-
-
-    # Initialize the Open Interface
-
-    print "Initializing Open Interface",
-    mode = 0
-    start_time = time.time()
-    timeout_seconds = 10
-     
-    connection.flushInput()
-    send_serial_string("128 132 142 35")# 128- Open; 132-Full; 142-Sensors; 35-OI Mode
-
-    while ((mode!=3) and ((time.time() - start_time) < timeout_seconds)):              
-        if (connection.inWaiting() > 0):
-            char=connection.read()
-            if(len(char)==1):
-                mode = ord(char)
-                print mode,
-            else:
-                mode=-1
-        else:
-            send_serial_string("128 132 142 35")     
-            time.sleep(0.5)
-            print '.',
-
-    if(mode == 3):
-        print "Initialized."
-    else:
-        print "Failed to initialize Open Interface: in mode", mode
-        connection.close()
-        return
-
-
-    # Stream packet group 1 and packets 17 and 35
-
-    send_serial_string("148 9 7 8 9 10 11 12 17 18 25")#Updated 9:20 GT
-    is_streaming = 0
-
-    done = False
-
-    # Main loop
+    global RobMem
+    RobMem=Sense.OpenConnection(RobMem)
 
     print "Starting main loop..."
-    while(not done):
-        try:
-            char = connection.read()
-            if((len(char)==1) and (ord(char) == IROBOT_OI_STREAM_START_BYTE)):
-                if(not is_streaming):
-                    is_streaming = 1
-                    print "Initialized streaming"
-
-                    nBytes = ord(connection.read())
-                    data = connection.read(nBytes)
-                    if(len(data) == nBytes == DATA_LENGTH):
-                        # The syntax here is not the most readable:
-                        # Element 11 is skipped, even though it doesn't look like it.
-                        # Parse data from funky format
-                         
-                        dict=UpdateDict(data)
-                        print dict               
-
-        except KeyboardInterrupt:
-            done = True;
+    while(not RobMem['done']):
+        if RobMem['State']=='Running':
+            try:
+                RobMem=Sense.StreamData(RobMem)
+                RobMem=Think.CheckForStop(RobMem)
+                #RobMem=Act.Drive(RobMem)              
+            except KeyboardInterrupt:
+                RobMem['done'] = True;
+                
+        elif RobMem['State']=='Impact':
+            RobMem=Sense.GrabPosition(RobMem)
+            RobMem=Think.UpdateMap(RobMem)
+            #RobMem=Act.MakeNoise(RobMem)
+            
+        elif RobMem['State']=='Spinning':
+            RobMem=Sense.StreamData(RobMem)
+            RobMem=Think.CheckSpin(RobMem)
+            #RobMem=Act.Spin(RobMem)
+            
+        elif RobMem['State']=='Measure Angle':
+            RobMem=Sense.GrabAngle(RobMem)
+            RobMem=Think.UpdateMapSpin(RobMem)
+            
+        else:
+            print 'Bad State' 
+            
                
     # Stop the robot
-    send_serial_string("137 0 0 0 0")
-    time.sleep(0.032)
-    connection.close();
+    Sense.send_serial_string("137 0 0 0 0")
+    Sense.CloseSense();
 
 if __name__ == "__main__":
     sys.exit(main())

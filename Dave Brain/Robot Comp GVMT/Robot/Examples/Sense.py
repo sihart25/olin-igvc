@@ -3,10 +3,10 @@ def UpdateDict(data):
     # Defined for this "148 9 7 8 9 10 11 12 17 18 25" streaming command
     dictOut=dict()
     dictOut['Bump Right']=data[1]&0x01
-    dictOut['Bump Left']=data[1]&0x02
-    dictOut['Wheeldrop Right']=data[1]&0x04
-    dictOut['Wheeldrop Left']=data[1]&0x08
-    dictOut['Wheeldrop Caster']=data[1]&0x10
+    dictOut['Bump Left']=(data[1]&0x02)>>1
+    dictOut['Wheeldrop Right']=(data[1]&0x04)>>2
+    dictOut['Wheeldrop Left']=(data[1]&0x08)>>3
+    dictOut['Wheeldrop Caster']=(data[1]&0x10)>>4
     dictOut['Wall']=data[3]&0x01
     dictOut['Cliff Left']=data[5]&0x01
     dictOut['Cliff Front Left']=data[7]&0x01
@@ -18,8 +18,14 @@ def UpdateDict(data):
     dictOut['IR Green']=IRdict[data[13]][1]
     dictOut['IR Force']=IRdict[data[13]][2]
     dictOut['Button Play']=data[15]&0x01
-    dictOut['Button Advance']=data[15]&0x04
+    dictOut['Button Advance']=(data[15]&0x04)>>2
     dictOut['Battery Charge']=data[17]
     return dictOut
+
+#if __name__ == '__main__':
+#    UpdateDict([01,01,01,01,01,
+#                01,01,01,01,01,
+#                01,01,01,01,01,
+#                01,01,01,01])
     
     

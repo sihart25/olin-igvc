@@ -93,7 +93,7 @@ def main():
      IROBOT_OI_STREAM_START_BYTE = 19;
      DATA_LENGTH = 19 # Packets 7,8,9,10,11,12,17,18,25
      #-- Keep this manually in sync with the packets you are streaming
-     COM_PORT = 5 #
+     COM_PORT = 3 #
 
 
      # Connect to serial port

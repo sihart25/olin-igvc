@@ -80,7 +80,7 @@ def send_serial_string(commandstr):
 def run_scheduler(stream_result):
      # Your code here!
      # Send commands to the robot with send_serial_string, send_serial_u8, and send_serial_s16
-     print "In scheduler..."
+     #print "In scheduler..."
      if(right_bumper(stream_result)):
           print "Right bumper!"
 
@@ -91,7 +91,7 @@ def main():
 
      # Constants
      IROBOT_OI_STREAM_START_BYTE = 19;
-     DATA_LENGTH = 15 # Packets 1, 17, 35 -- Keep this manually in sync with the packets you are streaming
+     DATA_LENGTH = 19 # Packets 1, 17, 35 -- Keep this manually in sync with the packets you are streaming
      COM_PORT = 3
 
 
@@ -152,8 +152,6 @@ def main():
      while(not done):
           try:
                char = connection.read()
-               print char
-               print is_streaming
                if((len(char)==1) and (ord(char) == IROBOT_OI_STREAM_START_BYTE)):
                     if(not is_streaming):
                          is_streaming = 1

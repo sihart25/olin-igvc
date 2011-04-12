@@ -1408,6 +1408,8 @@
 					<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 					</Item>
+					<Item Name="LidarOffsets.ctl" Type="VI" URL="../../Type Defs/LidarOffsets.ctl"/>
+					<Item Name="WriteToPC.vi" Type="VI" URL="../WriteToPC.vi"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">

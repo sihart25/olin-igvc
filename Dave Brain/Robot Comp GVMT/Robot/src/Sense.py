@@ -147,6 +147,7 @@ def send_serial_s16(num):
         raise Exception
 
 def send_serial_string(commandstr):
+    global connection
     if(type(commandstr)==str):
         for cmd in commandstr.split():
             send_serial_u8(int(cmd))

@@ -22,6 +22,8 @@
 		<Item Name="7-OCU" Type="Folder" URL="../7-OCU">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="1.1 Drive Motor Limit.vi" Type="VI" URL="../1-Hindbrain/1.1 Act/1.1 Drive Motor Limit.vi"/>
+		<Item Name="1.4.1-Encoder Math Simple.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math Simple.vi"/>
 		<Item Name="5-Forebrain.vi" Type="VI" URL="../5-Forebrain.vi"/>
 		<Item Name="7-OCU.vi" Type="VI" URL="../7-OCU.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -1494,6 +1496,7 @@
 					<Item Name="ManualModeLidar.vi" Type="VI" URL="../5-Forebrain/ManualModeLidar.vi"/>
 					<Item Name="LidarOffsets.ctl" Type="VI" URL="../../Type Defs/LidarOffsets.ctl"/>
 					<Item Name="WriteToPC.vi" Type="VI" URL="../WriteToPC.vi"/>
+<<<<<<< .mine
 					<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
 					<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
 					<Item Name="graph drivable paths.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/graph drivable paths.vi"/>
@@ -1515,6 +1518,31 @@
 					<Item Name="Athena Localization Data.vi" Type="VI" URL="../1-Hindbrain/Athena Localization Data.vi"/>
 					<Item Name="Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx"/>
 					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
+					<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
+					<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
+=======
+					<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
+					<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
+					<Item Name="graph drivable paths.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/graph drivable paths.vi"/>
+					<Item Name="confirm_measured_values_DFA.vi" Type="VI" URL="../FPGA/IO/LIDAR/confirm_measured_values_DFA.vi"/>
+					<Item Name="update drivable paths.vi" Type="VI" URL="../FPGA/IO/LIDAR/update drivable paths.vi"/>
+					<Item Name="LIDAR to robot cordinate transform.vi" Type="VI" URL="../FPGA/IO/LIDAR/LIDAR to robot cordinate transform.vi"/>
+					<Item Name="drivable paths global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/drivable paths global.vi"/>
+					<Item Name="NiRioSrv.dll" Type="Document" URL="NiRioSrv.dll">
+						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+					</Item>
+					<Item Name="UDP3GLOB.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3GLOB.vi"/>
+					<Item Name="QuaternionDecode.vi" Type="VI" URL="../1-Hindbrain/PC/QuaternionDecode.vi"/>
+					<Item Name="FPGA counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA math/FPGA counter.vi"/>
+					<Item Name="record data in array.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA math/record data in array.vi"/>
+					<Item Name="UDP 3.ctl" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP 3.ctl"/>
+					<Item Name="UDP3LOOP.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3LOOP.vi"/>
+					<Item Name="Computer GPS.vi" Type="VI" URL="../1-Hindbrain/Computer GPS.vi"/>
+					<Item Name="UDP3rtglob.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3rtglob.vi"/>
+					<Item Name="Athena Localization Data.vi" Type="VI" URL="../1-Hindbrain/Athena Localization Data.vi"/>
+					<Item Name="Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx"/>
+					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
+>>>>>>> .r336
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1827,6 +1855,9 @@
 			<Item Name="DaveBrain_FPGATarget_1.2.1.1-VectorNa_98C397BE.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1.2.1.1-VectorNa_98C397BE.lvbitx"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
+			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
+			<Item Name="ConsumeBefore.vi" Type="VI" URL="/E/Users/Varunn/Documents/Robotics 2/IGVC SVN/3-Midbrain/3.1-Where/3.1.2-GPS/ConsumeBefore.vi"/>
+			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

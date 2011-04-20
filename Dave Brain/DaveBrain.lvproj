@@ -1831,7 +1831,6 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 			<Item Name="2.7-Sense Queries Typedey.ctl" Type="VI" URL="../2-Low Neurons/2.7-Sense Queries Typedey.ctl"/>
-			<Item Name="GPS Coordinate.ctl" Type="VI" URL="../3-Midbrain/3.1-Where/3.1.2-GPS/_typedefs/GPS Coordinate.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

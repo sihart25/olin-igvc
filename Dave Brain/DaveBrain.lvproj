@@ -1,5 +1,17 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
+	<Property Name="varPersistentID:{1E4278C6-9D48-47BA-8105-63317112AF93}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/MDF Image</Property>
+	<Property Name="varPersistentID:{1F71BFF8-B9DE-4C0C-9EB7-99174A59294B}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/ForebrainCom</Property>
+	<Property Name="varPersistentID:{25DC6D17-A2B7-4419-B68F-3C6937BF7523}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/Ystart</Property>
+	<Property Name="varPersistentID:{2C753834-47ED-408B-B734-5A4DEE7F9E5F}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/LIDAR Data (r:pixel b:degrees)</Property>
+	<Property Name="varPersistentID:{6B88C7E4-0FE9-4222-B584-2A97B18D2572}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/stop</Property>
+	<Property Name="varPersistentID:{74EADB38-3AF6-460A-8161-3A6646AAF204}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/initialized LIDAR_array</Property>
+	<Property Name="varPersistentID:{88F23D10-7D3B-4B36-BA40-221FA1F1C948}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/WhatAroundMe? Clean</Property>
+	<Property Name="varPersistentID:{CF9E488D-EFF4-4713-96A8-14C58EC877C9}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/ActCommand</Property>
+	<Property Name="varPersistentID:{D616A522-E96B-4DC4-ACA1-E1D8239BC908}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/Xstart</Property>
+	<Property Name="varPersistentID:{DB66F0B5-8171-43EC-841A-DC915BFDE33E}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/MissionTime</Property>
+	<Property Name="varPersistentID:{FB1DBA07-50B6-447B-AAAE-F8F6B0B818F1}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/HowAmI? Clean</Property>
+	<Property Name="varPersistentID:{FF0DA977-7CB8-480B-811D-14B168220A04}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/WhereAmI? Clean</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -26,6 +38,7 @@
 		<Item Name="1.4.1-Encoder Math Simple.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math Simple.vi"/>
 		<Item Name="5-Forebrain.vi" Type="VI" URL="../5-Forebrain.vi"/>
 		<Item Name="7-OCU.vi" Type="VI" URL="../7-OCU.vi"/>
+		<Item Name="RobotBrainExLibrary.lvlib" Type="Library" URL="../RobotBrainExLibrary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
@@ -119,8 +132,8 @@
 				<Item Name="Validate Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Validate Rectangle.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1785,34 +1798,6 @@
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
-				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
-				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
@@ -1826,11 +1811,8 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="DaveBrain_FPGATarget_1.2.1-VectorNavR_8EA85E47.lvbitx" Type="Document" URL="../3-Midbrain/3.1-Where/FPGA Bitfiles/DaveBrain_FPGATarget_1.2.1-VectorNavR_8EA85E47.lvbitx"/>
-			<Item Name="DaveBrain_FPGATarget_1.2.1.1-VectorNa_98C397BE.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1.2.1.1-VectorNa_98C397BE.lvbitx"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
-			<Item Name="2.7-Sense Queries Typedey.ctl" Type="VI" URL="../2-Low Neurons/2.7-Sense Queries Typedey.ctl"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

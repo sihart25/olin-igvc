@@ -136,8 +136,8 @@
 			</Item>
 			<Item Name="3.2-Where Sensor Typedef.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2-Where Sensor Typedef.ctl"/>
 			<Item Name="3.2.1-VectorNav Data.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2.1-VectorNav Data.ctl"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="NearWaypointTest.vi" Type="VI" URL="../5-Forebrain/5.3 Where/NearWaypointTest.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -147,8 +147,6 @@
 			</Item>
 			<Item Name="no timeout error.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/examples/comm/UDP.llb/no timeout error.vi"/>
 			<Item Name="UpdateMDF.vi" Type="VI" URL="../5-Forebrain/5.3 Where/UpdateMDF.vi"/>
-			<Item Name="WayPointFollowing.vi" Type="VI" URL="../5-Forebrain/5.2 Where/WayPointFollowing.vi"/>
-			<Item Name="Where I Am.vi" Type="VI" URL="../5-Forebrain/5.2 Where/Where I Am.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1849,7 +1847,7 @@
 			</Item>
 			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
 			<Item Name="5.7.1-No Timeout.vi" Type="VI" URL="../5-Forebrain/5.7-UDP/5.7.1-No Timeout.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

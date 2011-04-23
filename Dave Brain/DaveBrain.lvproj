@@ -137,9 +137,7 @@
 			</Item>
 			<Item Name="3.2-Where Sensor Typedef.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2-Where Sensor Typedef.ctl"/>
 			<Item Name="3.2.1-VectorNav Data.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2.1-VectorNav Data.ctl"/>
-			<Item Name="5.0-Global.vi" Type="VI" URL="../5-Forebrain/5-Forebrain/5.0-Global.vi"/>
 			<Item Name="HowForebrainPerception.vi" Type="VI" URL="../5-Forebrain/5.8 Hypothalamus/HowForebrainPerception.vi"/>
-			<Item Name="Hypo-T.vi" Type="VI" URL="../7-OCU/Hypo-T.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">

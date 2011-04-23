@@ -38,7 +38,7 @@
 		<Item Name="1.4.1-Encoder Math Simple.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math Simple.vi"/>
 		<Item Name="5-Forebrain.vi" Type="VI" URL="../5-Forebrain.vi"/>
 		<Item Name="7-OCU Dave.vi" Type="VI" URL="../7-OCU Dave.vi"/>
-		<Item Name="7-OCU Jaime.vi" Type="VI" URL="../7-OCU Jaime.vi"/>
+		<Item Name="7-OCU.vi" Type="VI" URL="../7-OCU.vi"/>
 		<Item Name="RobotBrainExLibrary.lvlib" Type="Library" URL="../RobotBrainExLibrary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

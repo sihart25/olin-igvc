@@ -138,7 +138,6 @@
 			<Item Name="3.2.1-VectorNav Data.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2.1-VectorNav Data.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
-			<Item Name="NearWaypointTest.vi" Type="VI" URL="../5-Forebrain/5.2 Where/NearWaypointTest.vi"/>
 			<Item Name="NearWaypointTest.vi" Type="VI" URL="../5-Forebrain/5.3 Where/NearWaypointTest.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -147,7 +146,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="no timeout error.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/examples/comm/UDP.llb/no timeout error.vi"/>
-			<Item Name="SlowNearWaypoint.vi" Type="VI" URL="../5-Forebrain/5.2 Where/SlowNearWaypoint.vi"/>
 			<Item Name="UpdateMDF.vi" Type="VI" URL="../5-Forebrain/5.3 Where/UpdateMDF.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

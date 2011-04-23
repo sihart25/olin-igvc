@@ -37,7 +37,8 @@
 		<Item Name="1.1 Drive Motor Limit.vi" Type="VI" URL="../1-Hindbrain/1.1 Act/1.1 Drive Motor Limit.vi"/>
 		<Item Name="1.4.1-Encoder Math Simple.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math Simple.vi"/>
 		<Item Name="5-Forebrain.vi" Type="VI" URL="../5-Forebrain.vi"/>
-		<Item Name="7-OCU.vi" Type="VI" URL="../7-OCU.vi"/>
+		<Item Name="7-OCU Dave.vi" Type="VI" URL="../7-OCU Dave.vi"/>
+		<Item Name="7-OCU Jaime.vi" Type="VI" URL="../7-OCU Jaime.vi"/>
 		<Item Name="RobotBrainExLibrary.lvlib" Type="Library" URL="../RobotBrainExLibrary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -135,18 +136,17 @@
 				<Item Name="Validate Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Validate Rectangle.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="3.2-Where Sensor Typedef.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2-Where Sensor Typedef.ctl"/>
 			<Item Name="3.2.1-VectorNav Data.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2.1-VectorNav Data.ctl"/>
+			<Item Name="3.3.1-LIDAR Data Typedef.ctl" Type="VI" URL="../3-Midbrain/3.3-What/_typedefs/3.3.1-LIDAR Data Typedef.ctl"/>
 			<Item Name="HowForebrainPerception.vi" Type="VI" URL="../5-Forebrain/5.8 Hypothalamus/HowForebrainPerception.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="no timeout error.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/examples/comm/UDP.llb/no timeout error.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -738,6 +738,54 @@
 					</Item>
 				</Item>
 				<Item Name="DIO-4" Type="Folder">
+					<Item Name="AnO-5" Type="Folder">
+						<Item Name="Steer Drive" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_AO-5/AO0</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{A4DE7A24-D5CD-4507-AAAB-3D9C72A329C1}</Property>
+						</Item>
+						<Item Name="Lidar Drive" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_AO-5/AO1</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{111773DF-474D-43E4-AF3E-68B18FAE8398}</Property>
+						</Item>
+						<Item Name="Drive Motor" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_AO-5/AO2</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{057FC3EC-A5AA-4197-8B2A-882A1FAFC3EC}</Property>
+						</Item>
+						<Item Name="Unused AO" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_AO-5/AO3</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{5BC465A8-320B-4311-BA6F-D5BBA94FE79E}</Property>
+						</Item>
+						<Item Name="AO-5" Type="RIO C Series Module">
+							<Property Name="crio.Calibration" Type="Str">1</Property>
+							<Property Name="crio.Location" Type="Str">Slot 5</Property>
+							<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+							<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
+							<Property Name="crio.Type" Type="Str">NI 9263</Property>
+							<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+							<Property Name="cRIOModule.HotSwapMode" Type="Str">0</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{39C66445-06DA-4520-AC1F-392DC37D75B6}</Property>
+						</Item>
+					</Item>
 					<Item Name="Drive Encoder Cable Check" Type="Elemental IO">
 						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
    <Attribute name="resource">
@@ -1036,54 +1084,6 @@
 						<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
 						<Property Name="cRIOModule.Initial Line Direction" Type="Str">00000000000000000000000000000000</Property>
 						<Property Name="FPGA.PersistentID" Type="Str">{A8011A02-A9A6-46C7-B748-8B210FBF0A3E}</Property>
-					</Item>
-				</Item>
-				<Item Name="AnO-5" Type="Folder">
-					<Item Name="Steer Drive" Type="Elemental IO">
-						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="resource">
-   <Value>/crio_AO-5/AO0</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-						<Property Name="FPGA.PersistentID" Type="Str">{A4DE7A24-D5CD-4507-AAAB-3D9C72A329C1}</Property>
-					</Item>
-					<Item Name="Lidar Drive" Type="Elemental IO">
-						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="resource">
-   <Value>/crio_AO-5/AO1</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-						<Property Name="FPGA.PersistentID" Type="Str">{111773DF-474D-43E4-AF3E-68B18FAE8398}</Property>
-					</Item>
-					<Item Name="Drive Motor" Type="Elemental IO">
-						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="resource">
-   <Value>/crio_AO-5/AO2</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-						<Property Name="FPGA.PersistentID" Type="Str">{057FC3EC-A5AA-4197-8B2A-882A1FAFC3EC}</Property>
-					</Item>
-					<Item Name="Unused AO" Type="Elemental IO">
-						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="resource">
-   <Value>/crio_AO-5/AO3</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-						<Property Name="FPGA.PersistentID" Type="Str">{5BC465A8-320B-4311-BA6F-D5BBA94FE79E}</Property>
-					</Item>
-					<Item Name="AO-5" Type="RIO C Series Module">
-						<Property Name="crio.Calibration" Type="Str">1</Property>
-						<Property Name="crio.Location" Type="Str">Slot 5</Property>
-						<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
-						<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
-						<Property Name="crio.Type" Type="Str">NI 9263</Property>
-						<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-						<Property Name="cRIOModule.HotSwapMode" Type="Str">0</Property>
-						<Property Name="FPGA.PersistentID" Type="Str">{39C66445-06DA-4520-AC1F-392DC37D75B6}</Property>
 					</Item>
 				</Item>
 				<Item Name="AnI-6" Type="Folder">
@@ -1511,7 +1511,6 @@
 					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
 					<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
 					<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
-					<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1848,19 +1847,8 @@
 			</Item>
 			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
 			<Item Name="5.7.1-No Timeout.vi" Type="VI" URL="../5-Forebrain/5.7-UDP/5.7.1-No Timeout.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="niLvFpga_Close_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Close_cRIO-9104.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
-			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="niLvFpga_Open_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Open_cRIO-9104.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
-			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

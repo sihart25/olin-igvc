@@ -1513,6 +1513,7 @@
 					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
 					<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
 					<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
+					<Item Name="visarc" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1840,6 +1841,30 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="Scale Delta t.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Scale Delta t.vi"/>
+				<Item Name="WDT Scale Delta t I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t I32.vi"/>
+				<Item Name="DWDT Scale Delta t.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Scale Delta t.vi"/>
+				<Item Name="WDT Scale Delta t I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t I16.vi"/>
+				<Item Name="WDT Scale Delta t CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t CDB.vi"/>
+				<Item Name="WDT Scale Delta t EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t EXT.vi"/>
+				<Item Name="WDT Scale Delta t SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t SGL.vi"/>
+				<Item Name="WDT Scale Delta t DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t DBL.vi"/>
+				<Item Name="WDT Scale Delta t I64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t I64.vi"/>
+				<Item Name="Waveform to XY Pairs.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform to XY Pairs.vi"/>
+				<Item Name="WDT Waveform to XY Pairs DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs DBL.vi"/>
+				<Item Name="WDT Waveform to XY Pairs SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs SGL.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I64.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I32.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I16.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I8.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U64.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U32.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U16.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U8.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CDB.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CSG.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CSG.vi"/>
+				<Item Name="WDT Waveform to XY Pairs EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs EXT.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CXT.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Hokuyo URG Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Hokuyo URG Series.lvlib"/>

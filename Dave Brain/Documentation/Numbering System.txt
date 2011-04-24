@@ -31,4 +31,6 @@
 
 5-Forebrain
 
-6-OCU (this is the human interface, and is detachable)
+6-OCU Neurons 
+
+7-OCU(this is the human interface, and is detachable)

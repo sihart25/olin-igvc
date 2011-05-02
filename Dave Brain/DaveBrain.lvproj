@@ -157,6 +157,10 @@
 			<Item Name="2.1 PID Gains Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.1 PID Gains Typedef.ctl"/>
 			<Item Name="3.2.1-VectorNav Data.ctl" Type="VI" URL="../3-Midbrain/3.2-Where/_typedefs/3.2.1-VectorNav Data.ctl"/>
 			<Item Name="3.3.1-LIDAR Data Typedef.ctl" Type="VI" URL="../3-Midbrain/3.3-What/_typedefs/3.3.1-LIDAR Data Typedef.ctl"/>
+			<Item Name="5.7.1-No Timeout.vi" Type="VI" URL="../7-OCU/5-Forebrain/5.7-UDP/5.7.1-No Timeout.vi"/>
+			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../7-OCU/6-OCU Neurons/6.1-UDP Saitek.ctl"/>
+			<Item Name="7.1-Grab Saitek.vi" Type="VI" URL="../7-OCU/7.1-Grab Saitek.vi"/>
+			<Item Name="7.2.3 Joystick Mapping.vi" Type="VI" URL="../7-OCU/7.2.3 Joystick Mapping.vi"/>
 			<Item Name="FillOGrid.vi" Type="VI" URL="../3-Midbrain/3.3-What/3.3.1-LIDAR/FillOGrid.vi"/>
 			<Item Name="HowForebrainPerception.vi" Type="VI" URL="../5-Forebrain/5.8 Hypothalamus/HowForebrainPerception.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
@@ -1534,7 +1538,6 @@
 					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
 					<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
 					<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
-					<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1919,21 +1922,11 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="5.7.1-No Timeout.vi" Type="VI" URL="../5-Forebrain/5.7-UDP/5.7.1-No Timeout.vi"/>
-			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
 			<Item Name="MDF.ctl" Type="VI" URL="../6-OCU Neurons/MDF.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="niLvFpga_Close_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Close_cRIO-9104.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
-			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="niLvFpga_Open_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Open_cRIO-9104.vi"/>
-			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
+			<Item Name="UDP_Basic_Client.vi" Type="VI" URL="../7-OCU/7.7-UDP/UDP_Basic_Client.vi"/>
+			<Item Name="UDP_Basic_Server.vi" Type="VI" URL="../7-OCU/7.7-UDP/UDP_Basic_Server.vi"/>
+			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

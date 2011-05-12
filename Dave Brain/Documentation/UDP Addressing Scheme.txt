@@ -1,0 +1,25 @@
+UDP Mutlicast Addressing Scheme:
+
+3.7 - Multicast Address: 224.0.3.7
+3.1-4.7.1 Port: 31471
+3.2-4.7.2 Port: 32472
+3.3-4.7.3 Port: 33473
+3.4-4.7.4 Port: 34474
+
+5.7 - Multicast Address: 224.0.5.7
+5.1-4.7.1 Port: 51471
+5.2-4.7.2 Port: 52472
+5.3-4.7.3 Port: 53473
+5.4-4.7.4 Port: 54474
+
+5.1-6.7.1 Port: 51671
+5.2-6.7.2 Port: 52672
+5.3-6.7.3 Port: 53673
+5.4-6.7.4 Port: 54674
+
+7.7 - Multicast Address: 224.0.7.7
+7.1-6.7.1 Port: 61671
+7.2-6.7.2 Port: 62672
+7.3-6.7.3 Port: 63673
+7.4-6.7.4 Port: 64674
+

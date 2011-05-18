@@ -184,6 +184,7 @@
 			<Item Name="ReadMDF.vi" Type="VI" URL="../7-OCU/ReadMDF.vi"/>
 			<Item Name="SimLIDARPlot.vi" Type="VI" URL="../7-OCU/SimLIDARPlot.vi"/>
 			<Item Name="TabEnum.ctl" Type="VI" URL="../7-OCU/TabEnum.ctl"/>
+			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1547,6 +1548,7 @@
 					<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
 					<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
 					<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
+					<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="1-Hindbrain" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1943,6 +1945,7 @@
 			<Item Name="5.7-UDP Check Checksum.vi" Type="VI" URL="../5-Forebrain/5.7-UDP/5.7-UDP Check Checksum.vi"/>
 			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

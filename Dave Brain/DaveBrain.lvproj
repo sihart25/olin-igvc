@@ -1,17 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
-	<Property Name="varPersistentID:{1E4278C6-9D48-47BA-8105-63317112AF93}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/MDF Image</Property>
-	<Property Name="varPersistentID:{1F71BFF8-B9DE-4C0C-9EB7-99174A59294B}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/ForebrainCom</Property>
-	<Property Name="varPersistentID:{25DC6D17-A2B7-4419-B68F-3C6937BF7523}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/Ystart</Property>
-	<Property Name="varPersistentID:{2C753834-47ED-408B-B734-5A4DEE7F9E5F}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/LIDAR Data (r:pixel b:degrees)</Property>
-	<Property Name="varPersistentID:{6B88C7E4-0FE9-4222-B584-2A97B18D2572}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/stop</Property>
-	<Property Name="varPersistentID:{74EADB38-3AF6-460A-8161-3A6646AAF204}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/initialized LIDAR_array</Property>
-	<Property Name="varPersistentID:{88F23D10-7D3B-4B36-BA40-221FA1F1C948}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/WhatAroundMe? Clean</Property>
-	<Property Name="varPersistentID:{CF9E488D-EFF4-4713-96A8-14C58EC877C9}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/ActCommand</Property>
-	<Property Name="varPersistentID:{D616A522-E96B-4DC4-ACA1-E1D8239BC908}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/Xstart</Property>
-	<Property Name="varPersistentID:{DB66F0B5-8171-43EC-841A-DC915BFDE33E}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/MissionTime</Property>
-	<Property Name="varPersistentID:{FB1DBA07-50B6-447B-AAAE-F8F6B0B818F1}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/HowAmI? Clean</Property>
-	<Property Name="varPersistentID:{FF0DA977-7CB8-480B-811D-14B168220A04}" Type="Ref">/My Computer/RobotBrainExLibrary.lvlib/WhereAmI? Clean</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -41,10 +29,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="5-Forebrain.vi" Type="VI" URL="../5-Forebrain.vi"/>
-		<Item Name="7-New OCU.vi" Type="VI" URL="../7-New OCU.vi"/>
-		<Item Name="7-OCU Dave.vi" Type="VI" URL="../7-OCU Dave.vi"/>
 		<Item Name="7-OCU.vi" Type="VI" URL="../7-OCU.vi"/>
-		<Item Name="RobotBrainExLibrary.lvlib" Type="Library" URL="../RobotBrainExLibrary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Hokuyo URG Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Hokuyo URG Series/Hokuyo URG Series.lvlib"/>
@@ -52,9 +37,11 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
 				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
-				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+<<<<<<< .mine
+=======
 				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
+>>>>>>> .r651
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
@@ -66,14 +53,11 @@
 				<Item Name="Compass Indicator.xctl" Type="XControl" URL="/&lt;vilib&gt;/robotics/Controls/Compass Indicator/Compass Indicator.xctl"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
 				<Item Name="Draw Arc.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Arc.vi"/>
 				<Item Name="Draw Circle by Radius.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Draw Circle by Radius.vi"/>
-				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
 				<Item Name="Draw Line.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Line.vi"/>
 				<Item Name="Draw Multiple Lines.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Multiple Lines.vi"/>
 				<Item Name="Draw Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rect.vi"/>
@@ -90,7 +74,6 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
@@ -99,7 +82,10 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Hilite Color.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Hilite Color.vi"/>
+<<<<<<< .mine
+=======
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+>>>>>>> .r651
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
 				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
 				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
@@ -129,7 +115,6 @@
 				<Item Name="Read From Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File (string).vi"/>
 				<Item Name="Read From Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File.vi"/>
 				<Item Name="Read Lines From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File.vi"/>
-				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Scale Delta t.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Scale Delta t.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -193,6 +178,10 @@
 			<Item Name="AutoSteerAngle.vi" Type="VI" URL="../7-OCU/AutoSteerAngle.vi"/>
 			<Item Name="Coords2Pixels.vi" Type="VI" URL="../7-OCU/Coords2Pixels.vi"/>
 			<Item Name="Data Latch.ctl" Type="VI" URL="../2-Low Neurons/Data Latch.ctl"/>
+<<<<<<< .mine
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+=======
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 			<Item Name="DrawRobot.vi" Type="VI" URL="../7-OCU/DrawRobot.vi"/>
 			<Item Name="GotoWaypoint.vi" Type="VI" URL="../7-OCU/GotoWaypoint.vi"/>
@@ -202,13 +191,21 @@
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 			<Item Name="ManualActComand.vi" Type="VI" URL="../7-OCU/ManualActComand.vi"/>
 			<Item Name="ManualModeLidar.vi" Type="VI" URL="../7-OCU/ManualModeLidar.vi"/>
+>>>>>>> .r651
 			<Item Name="MDF Waypoint.ctl" Type="VI" URL="../6-OCU Neurons/MDF Waypoint.ctl"/>
 			<Item Name="MDF.ctl" Type="VI" URL="../6-OCU Neurons/MDF.ctl"/>
-			<Item Name="MissionDefinitionFile.ctl" Type="VI" URL="../4-High Neurons/MissionDefinitionFile.ctl"/>
 			<Item Name="Motors Check.vi" Type="VI" URL="../7-OCU/Motors Check.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+<<<<<<< .mine
+			<Item Name="Pixels2Coords.vi" Type="VI" URL="../7-OCU/Pixels2Coords.vi"/>
+			<Item Name="ProcessLidarData.vi" Type="VI" URL="../7-OCU/ProcessLidarData.vi"/>
+			<Item Name="ReadMDF.vi" Type="VI" URL="../7-OCU/ReadMDF.vi"/>
+			<Item Name="SimLIDARPlot.vi" Type="VI" URL="../7-OCU/SimLIDARPlot.vi"/>
+			<Item Name="TabEnum.ctl" Type="VI" URL="../7-OCU/TabEnum.ctl"/>
+			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
+=======
 			<Item Name="Pixel_LIDAR_Close.vi" Type="VI" URL="../7-OCU/Pixel_LIDAR_Close.vi"/>
 			<Item Name="PixelLIDAR_Open.vi" Type="VI" URL="../7-OCU/PixelLIDAR_Open.vi"/>
 			<Item Name="Pixels2Coords.vi" Type="VI" URL="../7-OCU/Pixels2Coords.vi"/>
@@ -221,6 +218,7 @@
 			<Item Name="UpdateDashboard.vi" Type="VI" URL="../7-OCU/UpdateDashboard.vi"/>
 			<Item Name="WhatForebrainPerception.vi" Type="VI" URL="../7-OCU/WhatForebrainPerception.vi"/>
 			<Item Name="WhereForebrainPerception.vi" Type="VI" URL="../7-OCU/WhereForebrainPerception.vi"/>
+>>>>>>> .r651
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1981,9 +1979,25 @@
 			</Item>
 			<Item Name="MDF.ctl" Type="VI" URL="../6-OCU Neurons/MDF.ctl"/>
 			<Item Name="5.7-UDP Check Checksum.vi" Type="VI" URL="../5-Forebrain/5.7-UDP/5.7-UDP Check Checksum.vi"/>
+<<<<<<< .mine
+			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="niLvFpga_Close_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Close_cRIO-9104.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
+			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/nirio_resource_hc.ctl"/>
+			<Item Name="niLvFpga_Open_cRIO-9104.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9104/niLvFpga_Open_cRIO-9104.vi"/>
+			<Item Name="visarc" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/visarc"/>
+=======
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="6.1-UDP Saitek.ctl" Type="VI" URL="../6-OCU Neurons/6.1-UDP Saitek.ctl"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
+>>>>>>> .r651
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

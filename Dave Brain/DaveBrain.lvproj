@@ -204,7 +204,6 @@
 			<Item Name="Coords2Pixels.vi" Type="VI" URL="../7-OCU/Coords2Pixels.vi"/>
 			<Item Name="Data Latch.ctl" Type="VI" URL="../2-Low Neurons/Data Latch.ctl"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
-<<<<<<< .mine
 			<Item Name="drivable paths global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/drivable paths global.vi"/>
 			<Item Name="FPGA counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA math/FPGA counter.vi"/>
 			<Item Name="graph drivable paths.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/graph drivable paths.vi"/>
@@ -212,10 +211,6 @@
 			<Item Name="LidarOffsets.ctl" Type="VI" URL="../../Type Defs/LidarOffsets.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
-=======
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
->>>>>>> .r703
 			<Item Name="ManualModeLidar.vi" Type="VI" URL="../5-Forebrain/ManualModeLidar.vi"/>
 			<Item Name="MDF Waypoint.ctl" Type="VI" URL="../6-OCU Neurons/MDF Waypoint.ctl"/>
 			<Item Name="MDF.ctl" Type="VI" URL="../6-OCU Neurons/MDF.ctl"/>
@@ -2016,14 +2011,10 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="DecimalDegreesToMeters.vi" Type="VI" URL="../5-Forebrain/5.2 Where/DecimalDegreesToMeters.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 			<Item Name="4.1.1-Act Joystick.ctl" Type="VI" URL="../4-High Neurons/4.1.1-Act Joystick.ctl"/>
-<<<<<<< .mine
 			<Item Name="6.3-Lidar Data.ctl" Type="VI" URL="../6-OCU Neurons/6.3-Lidar Data.ctl"/>
-=======
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="6.3-Lidar Data.ctl" Type="VI" URL="../6-OCU Neurons/6.3-Lidar Data.ctl"/>
->>>>>>> .r703
 			<Item Name="1Hindbrain.lvbitx" Type="Document" URL="../FPGA Bitfiles/1Hindbrain.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

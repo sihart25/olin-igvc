@@ -10,6 +10,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="1-Hindbrain" Type="Folder" URL="../1-Hindbrain">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="3-Midbrain" Type="Folder" URL="../3-Midbrain">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -146,6 +149,7 @@
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="VISA Set IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Set IO Buffer Mask.ctl"/>
 				<Item Name="Waveform to XY Pairs.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform to XY Pairs.vi"/>
 				<Item Name="WDT Scale Delta t CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t CDB.vi"/>
 				<Item Name="WDT Scale Delta t DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Scale Delta t DBL.vi"/>
@@ -176,26 +180,49 @@
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
-			<Item Name="1.1 Lead For Steering.vi" Type="VI" URL="../1-Hindbrain/1.1 Act/1.1 Lead For Steering.vi"/>
-			<Item Name="1.4.1-Encoder Math Simple.vi" Type="VI" URL="../1-Hindbrain/1.4-How/1.4.1-Encoder Math Simple.vi"/>
-			<Item Name="1.5.12-GainMultiplyNoServer.vi" Type="VI" URL="../1-Hindbrain/1.5-MultServ/1.5.12-GainMultiplyNoServer.vi"/>
+			<Item Name="1.6.3-CosDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.3-CosDegIn_IV-I.vi"/>
+			<Item Name="1.6.4-SinDegIn_IV-I.vi" Type="VI" URL="../1-Hindbrain/1.6-Math/1.6.4-SinDegIn_IV-I.vi"/>
 			<Item Name="1Hindbrain.lvbitx" Type="Document" URL="../FPGA Bitfiles/1Hindbrain.lvbitx"/>
 			<Item Name="2-FPGA VI Typedef.ctl" Type="VI" URL="../2-Low Neurons/2-FPGA VI Typedef.ctl"/>
 			<Item Name="2.0-Hindbrain Startup State.ctl" Type="VI" URL="../2-Low Neurons/2.0-Hindbrain Startup State.ctl"/>
 			<Item Name="2.1 Act Debug.ctl" Type="VI" URL="../2-Low Neurons/2.1 Act Debug.ctl"/>
 			<Item Name="2.1 PID Gains Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.1 PID Gains Typedef.ctl"/>
 			<Item Name="2.1-Act Command Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.1-Act Command Typedef.ctl"/>
+			<Item Name="2.2-Where Control.ctl" Type="VI" URL="../2-Low Neurons/2.2-Where Control.ctl"/>
+			<Item Name="2.2-Where Indicator.ctl" Type="VI" URL="../2-Low Neurons/2.2-Where Indicator.ctl"/>
+			<Item Name="2.3-What Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.3-What Sensor Typedef.ctl"/>
+			<Item Name="2.3.6-Decode State.ctl" Type="VI" URL="../2-Low Neurons/2.3.6-Decode State.ctl"/>
 			<Item Name="2.4-How Sensor Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.4-How Sensor Typedef.ctl"/>
 			<Item Name="2.7-Sense Queries Typedef.ctl" Type="VI" URL="../2-Low Neurons/2.7-Sense Queries Typedef.ctl"/>
 			<Item Name="4.1.1-Act Joystick.ctl" Type="VI" URL="../4-High Neurons/4.1.1-Act Joystick.ctl"/>
+			<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
+			<Item Name="Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx" Type="Document" URL="../FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_serial FPGA Main.vi.lvbitx"/>
+			<Item Name="Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx" Type="Document" URL="../1-Hindbrain/FPGA Bitfiles/Athena Brain.lvproj_FPGA Target 2_vission comm test.vi.lvbitx"/>
+			<Item Name="Athena Localization Data.vi" Type="VI" URL="../1-Hindbrain/Athena Localization Data.vi"/>
+			<Item Name="Computer GPS.vi" Type="VI" URL="../1-Hindbrain/Computer GPS.vi"/>
+			<Item Name="confirm_measured_values_DFA.vi" Type="VI" URL="../FPGA/IO/LIDAR/confirm_measured_values_DFA.vi"/>
 			<Item Name="Coords2Pixels.vi" Type="VI" URL="../7-OCU/Coords2Pixels.vi"/>
 			<Item Name="Data Latch.ctl" Type="VI" URL="../2-Low Neurons/Data Latch.ctl"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
+<<<<<<< .mine
+			<Item Name="drivable paths global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/drivable paths global.vi"/>
+			<Item Name="FPGA counter.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA math/FPGA counter.vi"/>
+			<Item Name="graph drivable paths.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/behaviors/driveable path/graph drivable paths.vi"/>
+			<Item Name="LIDAR to robot cordinate transform.vi" Type="VI" URL="../FPGA/IO/LIDAR/LIDAR to robot cordinate transform.vi"/>
+			<Item Name="LidarOffsets.ctl" Type="VI" URL="../../Type Defs/LidarOffsets.ctl"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+=======
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+>>>>>>> .r703
+			<Item Name="ManualModeLidar.vi" Type="VI" URL="../5-Forebrain/ManualModeLidar.vi"/>
 			<Item Name="MDF Waypoint.ctl" Type="VI" URL="../6-OCU Neurons/MDF Waypoint.ctl"/>
 			<Item Name="MDF.ctl" Type="VI" URL="../6-OCU Neurons/MDF.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NiRioSrv.dll" Type="Document" URL="NiRioSrv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -206,9 +233,18 @@
 			</Item>
 			<Item Name="Pixels2Coords.vi" Type="VI" URL="../7-OCU/Pixels2Coords.vi"/>
 			<Item Name="ProcessLidarData.vi" Type="VI" URL="../7-OCU/ProcessLidarData.vi"/>
+			<Item Name="QuaternionDecode.vi" Type="VI" URL="../1-Hindbrain/PC/QuaternionDecode.vi"/>
 			<Item Name="ReadMDF.vi" Type="VI" URL="../7-OCU/ReadMDF.vi"/>
+			<Item Name="record data in array.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/FPGA math/record data in array.vi"/>
 			<Item Name="SimLIDARPlot.vi" Type="VI" URL="../7-OCU/SimLIDARPlot.vi"/>
 			<Item Name="TabEnum.ctl" Type="VI" URL="../7-OCU/TabEnum.ctl"/>
+			<Item Name="UDP 3.ctl" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP 3.ctl"/>
+			<Item Name="UDP3GLOB.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3GLOB.vi"/>
+			<Item Name="UDP3LOOP.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3LOOP.vi"/>
+			<Item Name="UDP3rtglob.vi" Type="VI" URL="../1-Hindbrain/UDP3-GPS, INS/UDP3rtglob.vi"/>
+			<Item Name="update drivable paths.vi" Type="VI" URL="../FPGA/IO/LIDAR/update drivable paths.vi"/>
+			<Item Name="VectorNav Heading Global.vi" Type="VI" URL="../1-Hindbrain/Unsorted Files from Athena/VectorNav Heading Global.vi"/>
+			<Item Name="WriteToPC.vi" Type="VI" URL="../WriteToPC.vi"/>
 			<Item Name="wsock32.dll" Type="Document" URL="wsock32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1982,8 +2018,12 @@
 			<Item Name="DecimalDegreesToMeters.vi" Type="VI" URL="../5-Forebrain/5.2 Where/DecimalDegreesToMeters.vi"/>
 			<Item Name="DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx" Type="Document" URL="../FPGA Bitfiles/DaveBrain_FPGATarget_1-Hindbrain_F0E489D8.lvbitx"/>
 			<Item Name="4.1.1-Act Joystick.ctl" Type="VI" URL="../4-High Neurons/4.1.1-Act Joystick.ctl"/>
+<<<<<<< .mine
+			<Item Name="6.3-Lidar Data.ctl" Type="VI" URL="../6-OCU Neurons/6.3-Lidar Data.ctl"/>
+=======
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="6.3-Lidar Data.ctl" Type="VI" URL="../6-OCU Neurons/6.3-Lidar Data.ctl"/>
+>>>>>>> .r703
 			<Item Name="1Hindbrain.lvbitx" Type="Document" URL="../FPGA Bitfiles/1Hindbrain.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

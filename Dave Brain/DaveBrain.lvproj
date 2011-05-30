@@ -2065,6 +2065,8 @@
 			<Item Name="1Hindbrain.lvbitx" Type="Document" URL="../FPGA Bitfiles/1Hindbrain.lvbitx"/>
 <<<<<<< .mine
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+<<<<<<< .mine
+=======
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
@@ -2078,6 +2080,7 @@
 =======
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 >>>>>>> .r711
+>>>>>>> .r712
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,0 +1,2 @@
+#labels Featured,Phase-Implementation
+I notice this wiki would be a great place for documentation. We can reference the PDF files in the project itself for more specifics. Though I'd refer to the documentation within the labview code rather than including a copy of all the function descriptions here. This would be an ideal spot for a high level overview.

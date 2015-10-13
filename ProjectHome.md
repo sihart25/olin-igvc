@@ -1,0 +1,1 @@
+The Olin College Intelligent Vehicles team creates an unmanned autonomous vehicle to navigate the AUVSI IGVC. This code is for the 2011 vehicle: Dave.
